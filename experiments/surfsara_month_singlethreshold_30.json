@@ -1,0 +1,60 @@
+{
+    "name": "surfsara_month_singlethreshold_30",
+    "runs": 1,
+    "topologies": [
+        {
+            "pathToFile": "topologies/surfsara_NL.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_BE.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_DE.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_FR.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_VN.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_US.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_AU.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_AT.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_SE.json"
+        },
+        {
+            "pathToFile": "topologies/surfsara_CA.json"
+        }
+    ],
+    "workloads": [{
+        "pathToFile": "workload_traces/2022-10-01_2022-10-31_shiftable",
+        "type": "ComputeWorkload"
+    }],
+    "allocationPolicies": [{
+        "type": "singlethreshold",
+        "filters": [{"type": "Compute"},{"type": "VCpu", "allocationRatio":  1.0}, {"type": "Ram", "allocationRatio":  1.5}],
+        "weighers": [{"type": "Ram", "multiplier": 1.0}],
+        "taskStopper": {"forecast" : true, "forecastThreshold" : 0.30, "forecastSize" : 48, "windowSize" :  24},
+        "shortForecastThreshold": 0.30,
+        "forecastSize":48,
+        "forecast": true
+    }],
+    "exportModels": [
+        {
+            "exportInterval": 3600,
+            "computeExportConfig": {
+            "hostExportColumns": ["power_draw", "energy_usage", "cpu_usage", "cpu_utilization", "embodied_carbon", "carbon_emission", "cpu_time_idle"],
+            "taskExportColumns": ["task_name", "boot_time", "creation_time", "finish_time", "task_state"],
+            "serviceExportColumns": ["tasks_total", "tasks_pending", "tasks_active", "tasks_completed", "tasks_terminated", "hosts_up"]
+            }
+        }
+    ]
+    
+}
