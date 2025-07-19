@@ -1,7 +1,9 @@
 # Introduction
 This is the repository for my bachelor thesis, conducted during my study in the Vrije Universiteit Amsterdam. This repository contains all necessary files, scripts have been used to run experiments and analyse data. However, this repository does not contain all written code to conduct this work since the code resides in another forked repository. You can refer to the code in ____ when you look into this section.
 
-My bachelor thesis is about **Analysing The Impact of Temporal Shifting in Carbon Emissions of Datacenters**
+My bachelor thesis is about **Analysing The Impact of Temporal Shifting in Carbon Emissions of Datacenters**.
+
+If you interested in reading my thesis, please refer to this [Overleaf](https://www.overleaf.com/read/gjcwqfbtrhch#04bcad).
 
 ## Repository Structure
 ```
