@@ -1,5 +1,5 @@
 # Introduction
-This is the repository for my bachelor thesis, conducted during my study in the Vrije Universiteit Amsterdam. This repository contains all necessary files, scripts have been used to run experiments and analyse data. However, this repository does not contain all written code to conduct this work since the code resides in another forked repository. You can refer to the code in ____ when you look into this section.
+This is the repository for my bachelor thesis, conducted during my study in the Vrije Universiteit Amsterdam. This repository contains all necessary files, scripts have been used to run experiments and analyse data. However, this repository does not contain all written code to conduct this work since the code resides in another forked repository. You can refer to the code in this [Repository](https://github.com/cukibe123/opendc).
 
 My bachelor thesis is about **Analysing The Impact of Temporal Shifting in Carbon Emissions of Datacenters**.
 
